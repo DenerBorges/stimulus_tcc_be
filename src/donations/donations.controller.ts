@@ -20,6 +20,6 @@ export class DonationsController {
 
   @Get(':id')
   findOne(@Param('id') id: number) {
-    return this.donationsService.findOne(id);
+    return this.donationsService.findOne(+id);
   }
 }

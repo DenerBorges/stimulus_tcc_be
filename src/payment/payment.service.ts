@@ -22,6 +22,10 @@ export default class PaymentService {
         status: DonationStatus.PAID,
       };
     } catch (error) {
+      console.error(
+        'Error on process payment: ',
+        JSON.stringify(error, null, 2),
+      );
       return {
         transactionId: '',
         status: DonationStatus.CANCELED,
