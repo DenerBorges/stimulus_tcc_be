@@ -10,6 +10,7 @@ import {
 import { ProjectsService } from './projects.service';
 import { Project } from '@prisma/client';
 import { CreateProjectDto } from './dto/create-project.dto';
+import { IsPublic } from 'src/auth/decorators/is-public.decorator';
 
 @Controller('projects')
 export class ProjectsController {
@@ -20,6 +21,7 @@ export class ProjectsController {
     return this.projectsService.create(createProjectDto);
   }
 
+  @IsPublic()
   @Get()
   findAll(): Promise<Project[]> {
     return this.projectsService.findAll();
