@@ -30,6 +30,7 @@ CREATE TABLE "Project" (
     "description" VARCHAR(255) NOT NULL,
     "category" VARCHAR(255) NOT NULL,
     "goal" DECIMAL(10,2) NOT NULL,
+    "deadline" INTEGER NOT NULL,
     "image" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
@@ -83,6 +84,3 @@ ALTER TABLE "Donation" ADD CONSTRAINT "Donation_userId_fkey" FOREIGN KEY ("userI
 
 -- AddForeignKey
 ALTER TABLE "Donation" ADD CONSTRAINT "Donation_rewardId_fkey" FOREIGN KEY ("rewardId") REFERENCES "Reward"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
-
--- AlterTable
-ALTER TABLE "Project" ADD COLUMN "deadline" INTEGER NOT NULL;
