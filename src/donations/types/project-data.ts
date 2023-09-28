@@ -6,5 +6,5 @@ export class ProjectData {
   description: string;
   category: string;
   goal: Decimal;
-  image: string;
+  image: string[];
 }

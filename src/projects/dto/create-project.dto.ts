@@ -8,6 +8,6 @@ export class CreateProjectDto {
   goal: Decimal;
   deadline: number;
   amount_donated?: number;
-  image: string;
+  image: string[];
   userId: number;
 }
