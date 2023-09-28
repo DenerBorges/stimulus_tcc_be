@@ -31,7 +31,7 @@ CREATE TABLE "Project" (
     "category" VARCHAR(255) NOT NULL,
     "goal" DECIMAL(10,2) NOT NULL,
     "deadline" INTEGER NOT NULL,
-    "image" TEXT NOT NULL,
+    "image" TEXT[],
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "userId" INTEGER NOT NULL,
