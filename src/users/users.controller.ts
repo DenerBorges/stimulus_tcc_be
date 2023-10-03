@@ -30,11 +30,13 @@ export class UsersController {
     return this.usersService.create(user);
   }
 
+  @IsPublic()
   @Get()
   findAll(): Promise<User[]> {
     return this.usersService.findAll();
   }
 
+  @IsPublic()
   @Get(':id')
   findOne(@Param('id') id: number): Promise<User | null> {
     return this.usersService.findOne(+id);
