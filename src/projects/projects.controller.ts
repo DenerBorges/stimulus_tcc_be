@@ -27,6 +27,7 @@ export class ProjectsController {
     return this.projectsService.findAll();
   }
 
+  @IsPublic()
   @Get(':id')
   findOne(@Param('id') id: number): Promise<Project | null> {
     return this.projectsService.findOne(+id);

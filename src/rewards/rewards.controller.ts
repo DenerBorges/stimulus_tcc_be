@@ -10,6 +10,7 @@ import {
 import { RewardsService } from './rewards.service';
 import { Reward } from '@prisma/client';
 import { CreateRewardDto } from './dto/create-reward.dto';
+import { IsPublic } from 'src/auth/decorators/is-public.decorator';
 
 @Controller('rewards')
 export class RewardsController {
@@ -20,11 +21,13 @@ export class RewardsController {
     return this.rewardsService.create(createRewardDto);
   }
 
+  @IsPublic()
   @Get()
   findAll(): Promise<Reward[]> {
     return this.rewardsService.findAll();
   }
 
+  @IsPublic()
   @Get(':id')
   findOne(@Param('id') id: number): Promise<Reward | null> {
     return this.rewardsService.findOne(+id);
