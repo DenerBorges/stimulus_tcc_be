@@ -37,6 +37,17 @@ export class ProjectsService {
     return foundProject;
   }
 
+  async searchProjects(query: string): Promise<Project[]> {
+    const searchProjects = await this.prisma.project.findMany({
+      where: {
+        name: {
+          contains: query,
+        },
+      },
+    });
+    return searchProjects;
+  }
+
   async update(id: number, data: Partial<Project>): Promise<Project> {
     const updateProject = await this.prisma.project.update({
       where: { id },

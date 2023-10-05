@@ -6,6 +6,7 @@ import {
   Put,
   Param,
   Delete,
+  Query,
 } from '@nestjs/common';
 import { ProjectsService } from './projects.service';
 import { Project } from '@prisma/client';
@@ -31,6 +32,12 @@ export class ProjectsController {
   @Get(':id')
   findOne(@Param('id') id: number): Promise<Project | null> {
     return this.projectsService.findOne(+id);
+  }
+
+  @IsPublic()
+  @Get('/search')
+  searchProjects(@Query('query') query: string): Promise<Project[] | null> {
+    return this.projectsService.searchProjects(query);
   }
 
   @Put(':id')
