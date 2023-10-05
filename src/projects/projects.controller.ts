@@ -35,7 +35,7 @@ export class ProjectsController {
   }
 
   @IsPublic()
-  @Get('/search')
+  @Get('search')
   searchProjects(@Query('query') query: string): Promise<Project[] | null> {
     return this.projectsService.searchProjects(query);
   }
