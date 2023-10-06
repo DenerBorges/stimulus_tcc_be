@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: ['http://localhost:3000', 'https://stimulus.fly.dev'],
+    origin: ['http://localhost:3000', 'https://stimulus-tcc-fe.vercel.app'],
   });
 
   app.setGlobalPrefix('/api/v1/');
