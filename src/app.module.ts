@@ -10,6 +10,7 @@ import { UsersModule } from './users/users.module';
 import { ProjectsModule } from './projects/projects.module';
 import { RewardsModule } from './rewards/rewards.module';
 import { DonationsModule } from './donations/donations.module';
+import { CommentsModule } from './comments/comments.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { DonationsModule } from './donations/donations.module';
     RewardsModule,
     AuthModule,
     DonationsModule,
+    CommentsModule,
   ],
   controllers: [AppController],
   providers: [AppService, { provide: APP_GUARD, useClass: JwtAuthGuard }],
