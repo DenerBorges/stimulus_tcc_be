@@ -5,6 +5,8 @@ export class ProjectData {
   name: string;
   description: string;
   category: string;
+  total: Decimal;
   goal: Decimal;
+  deadline: number;
   image: string[];
 }

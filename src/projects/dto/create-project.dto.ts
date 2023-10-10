@@ -5,6 +5,7 @@ export class CreateProjectDto {
   name: string;
   description: string;
   category: string;
+  total: Decimal;
   goal: Decimal;
   deadline: number;
   amount_donated?: number;

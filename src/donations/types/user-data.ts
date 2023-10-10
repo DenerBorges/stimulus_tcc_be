@@ -4,6 +4,7 @@ export class UserData {
   birthdate: string;
   email: string;
   password: string;
+  profilePic?: string;
   mobile?: string;
   document?: string;
   zipCode?: string;
@@ -13,8 +14,4 @@ export class UserData {
   neighborhood?: string;
   city?: string;
   state?: string;
-
-  constructor(data: Partial<UserData> = {}) {
-    Object.assign(this, data);
-  }
 }
