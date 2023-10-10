@@ -28,6 +28,14 @@ export class DonationsService {
     // console.log('Rewards: ', foundReward);
 
     const userCreated = await this.createUser(user);
+    if (userCreated === null) {
+      // Se o resultado for null, significa que o usuário não existe
+      return {
+        id: 0,
+        transactionId: '',
+        status: 'Usuário não existe',
+      };
+    }
     // console.log('userCreated', userCreated);
 
     let donationCreated = await this.createDonation(
@@ -58,19 +66,38 @@ export class DonationsService {
     };
   }
 
-  private async createUser(user: UserData): Promise<User> {
-    const userCreated = await this.prisma.user.upsert({
+  // private async createUser(user: UserData): Promise<User> {
+  //   const userCreated = await this.prisma.user.upsert({
+  //     where: { email: user.email },
+  //     update: user,
+  //     create: {
+  //       user: user.user,
+  //       birthdate: user.birthdate,
+  //       email: user.email,
+  //       password: user.password,
+  //     },
+  //   });
+
+  //   return userCreated;
+  // }
+
+  private async createUser(user: UserData): Promise<User | null> {
+    const userCreated = await this.prisma.user.findUnique({
       where: { email: user.email },
-      update: user,
-      create: {
-        user: user.user,
-        birthdate: user.birthdate,
-        email: user.email,
-        password: user.password,
-      },
     });
 
-    return userCreated;
+    if (userCreated) {
+      // O usuário já existe, você pode realizar a operação de update
+      const updatedUser = await this.prisma.user.update({
+        where: { email: userCreated.email },
+        data: user, // Use os dados do usuário fornecidos para atualizar
+      });
+
+      return updatedUser;
+    } else {
+      // O usuário não existe, retorne um erro ou faça algo apropriado
+      return null;
+    }
   }
 
   private async createDonation(

@@ -1,5 +1,6 @@
 import { Donation, DonationStatus, User } from '@prisma/client';
 import { PaymentData } from 'src/donations/types/payment-data';
+import { UserData } from 'src/donations/types/user-data';
 import { api } from 'src/lib/api';
 
 export default class PaymentService {
@@ -33,11 +34,17 @@ export default class PaymentService {
     }
   }
 
-  private async createUser(user: User): Promise<string> {
+  private async createUser(user: UserData): Promise<string> {
     const userResponse = await api.get(`/users?email=${user.email}`);
 
-    if (userResponse.data?.data?.lenght > 0) {
-      return userResponse.data?.data[0]?.id;
+    if (userResponse.data?.data?.length > 0) {
+      // Cliente já existe, atualize os dados se necessário
+      // Use a mesma lógica que você usou no CheckoutService para atualizar os dados
+      const userId = userResponse.data?.data[0]?.id;
+      // Atualize os dados do cliente, se necessário
+      // ...
+
+      return userId;
     }
 
     const userParams = {
