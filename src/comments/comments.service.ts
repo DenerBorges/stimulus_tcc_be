@@ -5,17 +5,10 @@ import { PrismaClient, Comment } from '@prisma/client';
 export class CommentsService {
   constructor(private prisma: PrismaClient) {}
 
-  async create(commentData: {
-    comment: string;
-    projectId: number;
-    userId: number;
-  }): Promise<Comment> {
-    const { comment, projectId, userId } = commentData;
+  async create(data: any): Promise<Comment> {
     const comments = await this.prisma.comment.create({
       data: {
-        comment,
-        projectId,
-        userId,
+        ...data,
       },
     });
     return comments;
