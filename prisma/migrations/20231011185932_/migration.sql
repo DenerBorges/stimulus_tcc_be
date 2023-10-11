@@ -45,6 +45,7 @@ CREATE TABLE "Project" (
 CREATE TABLE "Comment" (
     "id" SERIAL NOT NULL,
     "comment" VARCHAR(255) NOT NULL,
+    "user" VARCHAR(255) NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "projectId" INTEGER NOT NULL,

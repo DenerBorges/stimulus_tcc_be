@@ -54,6 +54,7 @@ model Project {
 model Comment {
   id        Int      @id @default(autoincrement())
   comment   String   @db.VarChar(255)
+  user      String   @db.VarChar(255)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   Project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
