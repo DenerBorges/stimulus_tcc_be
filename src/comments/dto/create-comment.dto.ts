@@ -2,7 +2,7 @@ export class CreateCommentDto {
   id: number;
   comment: string;
   user: string;
-  createAt: Date;
+  createdAt: Date;
   userId: number;
   projectId: number;
 }
