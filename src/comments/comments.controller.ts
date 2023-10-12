@@ -4,8 +4,9 @@ import {
   Post,
   Body,
   Put,
-  Param,
   Delete,
+  Param,
+  Query,
 } from '@nestjs/common';
 import { CommentsService } from './comments.service';
 import { Comment } from '@prisma/client';
@@ -22,8 +23,8 @@ export class CommentsController {
 
   @IsPublic()
   @Get()
-  findAll(): Promise<Comment[]> {
-    return this.commentsService.findAll();
+  findAll(@Query('projectId') projectId: number): Promise<Comment[]> {
+    return this.commentsService.findAll(projectId);
   }
 
   @IsPublic()
