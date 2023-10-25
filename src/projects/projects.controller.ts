@@ -29,15 +29,15 @@ export class ProjectsController {
   }
 
   @IsPublic()
-  @Get(':id')
-  findOne(@Param('id') id: number): Promise<Project | null> {
-    return this.projectsService.findOne(+id);
+  @Get('search')
+  searchProjects(@Query('name') name: string): Promise<Project[] | null> {
+    return this.projectsService.searchProjects(name);
   }
 
   @IsPublic()
-  @Get('search')
-  searchProjects(@Query('query') query: string): Promise<Project[] | null> {
-    return this.projectsService.searchProjects(query);
+  @Get(':id')
+  findOne(@Param('id') id: number): Promise<Project | null> {
+    return this.projectsService.findOne(+id);
   }
 
   @Put(':id')

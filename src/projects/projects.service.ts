@@ -37,11 +37,16 @@ export class ProjectsService {
     return foundProject;
   }
 
-  async searchProjects(query: string): Promise<Project[]> {
+  async searchProjects(name: string): Promise<Project[]> {
+    if (!name) {
+      return this.prisma.project.findMany();
+    }
+
     const searchProjects = await this.prisma.project.findMany({
       where: {
         name: {
-          contains: query,
+          contains: name,
+          mode: 'insensitive',
         },
       },
     });
