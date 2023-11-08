@@ -9,7 +9,6 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { ProjectsModule } from './projects/projects.module';
 import { RewardsModule } from './rewards/rewards.module';
-import { DonationsModule } from './donations/donations.module';
 import { CommentsModule } from './comments/comments.module';
 
 @Module({
@@ -23,7 +22,6 @@ import { CommentsModule } from './comments/comments.module';
     ProjectsModule,
     RewardsModule,
     AuthModule,
-    DonationsModule,
     CommentsModule,
   ],
   controllers: [AppController],
