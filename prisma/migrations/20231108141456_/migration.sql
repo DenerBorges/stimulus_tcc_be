@@ -1,6 +1,3 @@
--- CreateEnum
-CREATE TYPE "DonationStatus" AS ENUM ('PENDING', 'PAID', 'CANCELED');
-
 -- CreateTable
 CREATE TABLE "User" (
     "id" SERIAL NOT NULL,
@@ -70,9 +67,8 @@ CREATE TABLE "Reward" (
 -- CreateTable
 CREATE TABLE "Donation" (
     "id" SERIAL NOT NULL,
-    "status" "DonationStatus" NOT NULL DEFAULT 'PENDING',
-    "total" DECIMAL(10,2) NOT NULL,
-    "transactionId" VARCHAR(255),
+    "nome" VARCHAR(255) NOT NULL,
+    "valor" DECIMAL(10,2) NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "projectId" INTEGER NOT NULL,

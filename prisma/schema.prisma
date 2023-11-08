@@ -75,23 +75,16 @@ model Reward {
   donation    Donation[]
 }
 
-enum DonationStatus {
-  PENDING
-  PAID
-  CANCELED
-}
-
 model Donation {
-  id            Int            @id @default(autoincrement())
-  status        DonationStatus @default(PENDING)
-  total         Decimal        @db.Decimal(10, 2)
-  transactionId String?        @db.VarChar(255)
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  project       Project        @relation(fields: [projectId], references: [id])
-  projectId     Int
-  user          User           @relation(fields: [userId], references: [id])
-  userId        Int
-  reward        Reward         @relation(fields: [rewardId], references: [id])
-  rewardId      Int
+  id        Int      @id @default(autoincrement())
+  nome      String   @db.VarChar(255)
+  valor     Decimal  @db.Decimal(10, 2)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  project   Project  @relation(fields: [projectId], references: [id])
+  projectId Int
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  reward    Reward   @relation(fields: [rewardId], references: [id])
+  rewardId  Int
 }
