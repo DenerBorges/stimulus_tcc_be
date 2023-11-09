@@ -5,7 +5,11 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: ['http://localhost:3000', 'https://stimulus-tcc-fe.vercel.app'],
+    origin: [
+      'http://localhost:3000',
+      'https://stimulus-tcc-fe.vercel.app',
+      'https://api.mercadopago.com/v1/',
+    ],
   });
 
   app.setGlobalPrefix('/api/v1/');
