@@ -77,8 +77,8 @@ model Reward {
 
 model Donation {
   id        Int      @id @default(autoincrement())
-  nome      String   @db.VarChar(255)
-  valor     Decimal  @db.Decimal(10, 2)
+  name      String   @db.VarChar(255)
+  value     Decimal  @db.Decimal(10, 2)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   project   Project  @relation(fields: [projectId], references: [id])

@@ -67,8 +67,8 @@ CREATE TABLE "Reward" (
 -- CreateTable
 CREATE TABLE "Donation" (
     "id" SERIAL NOT NULL,
-    "nome" VARCHAR(255) NOT NULL,
-    "valor" DECIMAL(10,2) NOT NULL,
+    "name" VARCHAR(255) NOT NULL,
+    "value" DECIMAL(10,2) NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "projectId" INTEGER NOT NULL,
