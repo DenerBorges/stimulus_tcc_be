@@ -11,26 +11,28 @@ datasource db {
 }
 
 model User {
-  id           Int        @id @default(autoincrement())
-  user         String     @db.VarChar(255)
-  birthdate    String     @db.VarChar(255)
-  email        String     @unique @db.VarChar(255)
-  password     String     @db.VarChar(255)
-  profilePic   String?
-  mobile       String?    @db.VarChar(255)
-  document     String?    @db.VarChar(255)
-  zipCode      String?    @db.VarChar(255)
-  street       String?    @db.VarChar(255)
-  number       String?    @db.VarChar(255)
-  complement   String?    @db.VarChar(255)
-  neighborhood String?    @db.VarChar(255)
-  city         String?    @db.VarChar(255)
-  state        String?    @db.Char(2)
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
-  project      Project[]
-  comment      Comment[]
-  donation     Donation[]
+  id               Int        @id @default(autoincrement())
+  user             String     @db.VarChar(255)
+  birthdate        String     @db.VarChar(255)
+  email            String     @unique @db.VarChar(255)
+  password         String     @db.VarChar(255)
+  resetCode        String?
+  resetCodeExpires DateTime?
+  profilePic       String?
+  mobile           String?    @db.VarChar(255)
+  document         String?    @db.VarChar(255)
+  zipCode          String?    @db.VarChar(255)
+  street           String?    @db.VarChar(255)
+  number           String?    @db.VarChar(255)
+  complement       String?    @db.VarChar(255)
+  neighborhood     String?    @db.VarChar(255)
+  city             String?    @db.VarChar(255)
+  state            String?    @db.Char(2)
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+  project          Project[]
+  comment          Comment[]
+  donation         Donation[]
 }
 
 model Project {
