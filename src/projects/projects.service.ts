@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaClient, Project } from '@prisma/client';
 import { CreateProjectDto } from './dto/create-project.dto';
 
@@ -49,12 +49,37 @@ export class ProjectsService {
     return searchProjects;
   }
 
-  async update(id: number, data: Partial<Project>): Promise<Project> {
-    const updateProject = await this.prisma.project.update({
+  async update(
+    id: number,
+    data: Partial<Project>,
+    images?: Express.Multer.File[],
+  ): Promise<Project> {
+    // Verifica se o projeto existe
+    const existingProject = await this.prisma.project.findUnique({
+      where: { id },
+    });
+
+    if (!existingProject) {
+      throw new NotFoundException(`Projeto com ID ${id} não encontrado.`);
+    }
+
+    // Se imagens forem fornecidas, adicione-as ao projeto existente
+    if (images && images.length > 0) {
+      const imageStrings = images.map((image) =>
+        image.buffer.toString('base64'),
+      );
+
+      // Atualiza o projeto existente para adicionar as novas imagens
+      data.image = [...existingProject.image, ...imageStrings];
+    }
+
+    // Atualiza o projeto com os dados fornecidos
+    const updatedProject = await this.prisma.project.update({
       where: { id },
       data,
     });
-    return updateProject;
+
+    return updatedProject;
   }
 
   async remove(id: number): Promise<Project> {

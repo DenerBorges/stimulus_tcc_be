@@ -7,11 +7,14 @@ import {
   Param,
   Delete,
   Query,
+  UseInterceptors,
+  UploadedFiles,
 } from '@nestjs/common';
 import { ProjectsService } from './projects.service';
 import { Project } from '@prisma/client';
 import { CreateProjectDto } from './dto/create-project.dto';
 import { IsPublic } from 'src/auth/decorators/is-public.decorator';
+import { FilesInterceptor } from '@nestjs/platform-express/multer';
 
 @Controller('projects')
 export class ProjectsController {
@@ -41,11 +44,13 @@ export class ProjectsController {
   }
 
   @Put(':id')
+  @UseInterceptors(FilesInterceptor('images')) // 'images' deve corresponder ao nome do campo no formulário de upload
   update(
     @Param('id') id: number,
+    @UploadedFiles() images: Express.Multer.File[],
     @Body() project: Project,
   ): Promise<Project | null> {
-    return this.projectsService.update(+id, project);
+    return this.projectsService.update(+id, project, images);
   }
 
   @Delete(':id')
