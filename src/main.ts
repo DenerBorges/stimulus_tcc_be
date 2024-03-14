@@ -11,7 +11,6 @@ async function bootstrap() {
       'https://api.mercadopago.com/v1/',
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    allowedHeaders: ['content-type'],
     credentials: true,
   });
 
