@@ -10,7 +10,7 @@ async function bootstrap() {
       'https://stimulus-tcc-fe.vercel.app',
       'https://api.mercadopago.com/v1/',
     ],
-    allowedHeaders: '*',
+    preflightContinue: true,
   });
 
   app.setGlobalPrefix('/api/v1/');
