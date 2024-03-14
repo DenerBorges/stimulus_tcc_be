@@ -8,8 +8,11 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'https://stimulus-tcc-fe.vercel.app',
-      'https://api.mercadopago.com/v1/payments',
+      'https://api.mercadopago.com/v1/',
     ],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    allowedHeaders: ['content-type'],
+    credentials: true,
   });
 
   app.setGlobalPrefix('/api/v1/');
