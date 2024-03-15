@@ -21,8 +21,12 @@ export class ProjectsController {
   constructor(private readonly projectsService: ProjectsService) {}
 
   @Post()
-  create(@Body() createProjectDto: CreateProjectDto) {
-    return this.projectsService.create(createProjectDto);
+  @UseInterceptors(FilesInterceptor('images'))
+  create(
+    @Body() createProjectDto: CreateProjectDto,
+    @UploadedFiles() images: Express.Multer.File[],
+  ): Promise<Project> {
+    return this.projectsService.create(createProjectDto, images);
   }
 
   @IsPublic()
@@ -44,7 +48,7 @@ export class ProjectsController {
   }
 
   @Put(':id')
-  @UseInterceptors(FilesInterceptor('images')) // 'images' deve corresponder ao nome do campo no formulário de upload
+  @UseInterceptors(FilesInterceptor('images'))
   update(
     @Param('id') id: number,
     @UploadedFiles() images: Express.Multer.File[],

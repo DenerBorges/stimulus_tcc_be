@@ -6,8 +6,13 @@ import { CreateProjectDto } from './dto/create-project.dto';
 export class ProjectsService {
   constructor(private prisma: PrismaClient) {}
 
-  async create(createProjectDto: CreateProjectDto) {
+  async create(
+    createProjectDto: CreateProjectDto,
+    images: Express.Multer.File[],
+  ) {
     const { userId, ...projectData } = createProjectDto;
+
+    const imageStrings = images.map((image) => image.buffer.toString('base64'));
 
     const userExists = await this.prisma.user.findUnique({
       where: { id: userId },
@@ -21,6 +26,7 @@ export class ProjectsService {
       data: {
         userId: userId,
         ...projectData,
+        image: imageStrings,
       },
     });
   }
