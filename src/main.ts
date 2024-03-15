@@ -8,7 +8,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'https://stimulus-tcc-fe.vercel.app',
-      'https://api.mercadopago.com/v1/',
+      'https://api.mercadopago.com',
     ],
   });
 
