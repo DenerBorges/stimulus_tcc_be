@@ -12,7 +12,6 @@ import { RewardsModule } from './rewards/rewards.module';
 import { CommentsModule } from './comments/comments.module';
 import { DonationsModule } from './donations/donations.module';
 import { ForgotPasswordModule } from './forgot-password/forgot-password.module';
-import { PaymentModule } from './payment/payment.module';
 
 @Module({
   imports: [
@@ -28,7 +27,6 @@ import { PaymentModule } from './payment/payment.module';
     CommentsModule,
     DonationsModule,
     ForgotPasswordModule,
-    PaymentModule,
   ],
   controllers: [AppController],
   providers: [AppService, { provide: APP_GUARD, useClass: JwtAuthGuard }],
