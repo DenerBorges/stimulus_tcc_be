@@ -43,6 +43,7 @@ model Project {
   total       Decimal    @db.Decimal(10, 2)
   goal        Decimal    @db.Decimal(10, 2)
   deadline    Int        @db.Integer
+  report      Int        @db.Integer @default(0)
   image       String[]
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt

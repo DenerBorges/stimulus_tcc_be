@@ -51,6 +51,7 @@ export class ProjectsService {
 
   async update(
     id: number,
+    report: number,
     data: Partial<Project>,
     images?: Express.Multer.File[],
   ): Promise<Project> {
@@ -71,6 +72,15 @@ export class ProjectsService {
 
       // Atualiza o projeto existente para adicionar as novas imagens
       data.image = [...existingProject.image, ...imageStrings];
+    }
+
+    const reportThreshold = 20;
+    if (report >= reportThreshold) {
+      // Se o número de denúncias exceder o limite, exclua o projeto
+      await this.prisma.project.delete({ where: { id } });
+      throw new NotFoundException(
+        'Projeto excluído devido ao número excessivo de denúncias',
+      );
     }
 
     // Atualiza o projeto com os dados fornecidos

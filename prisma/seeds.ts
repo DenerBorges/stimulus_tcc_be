@@ -10,14 +10,13 @@ const projects = [
     total: 540,
     goal: 1300.0,
     deadline: 90,
+    report: 0,
     image: [
       'https://i.imgur.com/HRzcZmh.png',
       'https://i.imgur.com/LXpaw8c.jpg',
       'https://i.imgur.com/OEArnpU.jpg',
       'https://i.imgur.com/SaL1iOW.jpg',
     ],
-    createdAt: '2023-10-07T20:01:56.715Z',
-    updatedAt: '2023-10-07T20:01:56.715Z',
     userId: 1,
   },
   {
@@ -27,12 +26,11 @@ const projects = [
     total: 1250,
     goal: 3600.0,
     deadline: 130,
+    report: 0,
     image: [
       'https://i.imgur.com/KxiClv0.jpg',
       'https://i.imgur.com/DAPfANO.jpg',
     ],
-    createdAt: '2023-10-07T20:05:26.254Z',
-    updatedAt: '2023-10-07T20:05:26.254Z',
     userId: 1,
   },
   {
@@ -42,12 +40,11 @@ const projects = [
     total: 210,
     goal: 1170.0,
     deadline: 83,
+    report: 0,
     image: [
       'https://i.imgur.com/i10fFCF.jpg',
       'https://i.imgur.com/1ye5EkG.jpg',
     ],
-    createdAt: '2023-10-07T20:08:26.704Z',
-    updatedAt: '2023-10-07T20:08:26.704Z',
     userId: 1,
   },
   {
@@ -57,12 +54,11 @@ const projects = [
     total: 186,
     goal: 695.0,
     deadline: 67,
+    report: 0,
     image: [
       'https://i.imgur.com/abkfTHa.png',
       'https://i.imgur.com/7YJZrN6.jpg',
     ],
-    createdAt: '2023-10-07T20:31:13.649Z',
-    updatedAt: '2023-10-07T20:31:13.649Z',
     userId: 1,
   },
   {
@@ -72,12 +68,11 @@ const projects = [
     total: 983,
     goal: 2450.0,
     deadline: 114,
+    report: 0,
     image: [
       'https://i.imgur.com/bI7pGh1.jpg',
       'https://i.imgur.com/seP6bCT.jpg',
     ],
-    createdAt: '2023-10-07T20:33:20.545Z',
-    updatedAt: '2023-10-07T20:33:20.545Z',
     userId: 1,
   },
   {
@@ -87,12 +82,11 @@ const projects = [
     total: 2092,
     goal: 3920.0,
     deadline: 180,
+    report: 0,
     image: [
       'https://i.imgur.com/cn3OSEi.jpg',
       'https://i.imgur.com/IViW68z.jpg',
     ],
-    createdAt: '2023-10-07T20:35:28.318Z',
-    updatedAt: '2023-10-07T20:35:28.318Z',
     userId: 1,
   },
   {
@@ -103,12 +97,11 @@ const projects = [
     total: 34,
     goal: 560.0,
     deadline: 143,
+    report: 0,
     image: [
       'https://i.imgur.com/ilqnAsZ.jpg',
       'https://i.imgur.com/Rmsn6P5.jpg',
     ],
-    createdAt: '2023-10-07T20:37:10.014Z',
-    updatedAt: '2023-10-07T20:37:10.014Z',
     userId: 1,
   },
   {
@@ -118,12 +111,11 @@ const projects = [
     total: 2174,
     goal: 2300.0,
     deadline: 78,
+    report: 0,
     image: [
       'https://i.imgur.com/gHQYuLs.jpg',
       'https://i.imgur.com/fK0itrT.jpg',
     ],
-    createdAt: '2023-10-07T20:40:06.131Z',
-    updatedAt: '2023-10-07T20:40:06.131Z',
     userId: 1,
   },
   {
@@ -133,12 +125,11 @@ const projects = [
     total: 1340,
     goal: 980.0,
     deadline: 112,
+    report: 0,
     image: [
       'https://i.imgur.com/ZTI8Zm5.jpg',
       'https://i.imgur.com/hejhMdV.png',
     ],
-    createdAt: '2023-10-07T20:43:20.163Z',
-    updatedAt: '2023-10-07T20:43:20.163Z',
     userId: 1,
   },
   {
@@ -148,12 +139,11 @@ const projects = [
     total: 980,
     goal: 1140.0,
     deadline: 99,
+    report: 0,
     image: [
       'https://i.imgur.com/CiiaYqN.jpg',
       'https://i.imgur.com/KWLHFf8.jpg',
     ],
-    createdAt: '2023-10-07T20:45:07.897Z',
-    updatedAt: '2023-10-07T20:45:07.897Z',
     userId: 1,
   },
   {
@@ -163,12 +153,11 @@ const projects = [
     total: 1290,
     goal: 674.0,
     deadline: 75,
+    report: 0,
     image: [
       'https://i.imgur.com/Sbvw4pZ.jpg',
       'https://i.imgur.com/76N0ITf.png',
     ],
-    createdAt: '2023-10-07T20:46:34.942Z',
-    updatedAt: '2023-10-07T20:46:34.942Z',
     userId: 1,
   },
   {
@@ -178,12 +167,11 @@ const projects = [
     total: 1020,
     goal: 865.0,
     deadline: 135,
+    report: 0,
     image: [
       'https://i.imgur.com/z4sW4Op.png',
       'https://i.imgur.com/dGS1RIH.jpg',
     ],
-    createdAt: '2023-10-07T20:50:43.461Z',
-    updatedAt: '2023-10-07T20:50:43.461Z',
     userId: 1,
   },
   {
@@ -193,12 +181,11 @@ const projects = [
     total: 1730,
     goal: 2542.0,
     deadline: 87,
+    report: 0,
     image: [
       'https://i.imgur.com/suxToHr.jpg',
       'https://i.imgur.com/x5wsAwF.jpg',
     ],
-    createdAt: '2023-10-07T20:52:26.011Z',
-    updatedAt: '2023-10-07T20:52:26.011Z',
     userId: 1,
   },
   {
@@ -208,12 +195,11 @@ const projects = [
     total: 10420,
     goal: 8365.0,
     deadline: 78,
+    report: 0,
     image: [
       'https://i.imgur.com/61Vyb1u.jpg',
       'https://i.imgur.com/YxydHz9.jpg',
     ],
-    createdAt: '2023-10-07T20:54:17.013Z',
-    updatedAt: '2023-10-07T20:54:17.013Z',
     userId: 1,
   },
   {
@@ -223,12 +209,11 @@ const projects = [
     total: 5710,
     goal: 5670.0,
     deadline: 210,
+    report: 0,
     image: [
       'https://i.imgur.com/UBZTYdE.jpg',
       'https://i.imgur.com/9cbV565.jpg',
     ],
-    createdAt: '2023-10-07T20:55:50.376Z',
-    updatedAt: '2023-10-07T20:55:50.376Z',
     userId: 1,
   },
   {
@@ -238,12 +223,11 @@ const projects = [
     total: 2351,
     goal: 4835.0,
     deadline: 181,
+    report: 0,
     image: [
       'https://i.imgur.com/ZcU8Klu.jpg',
       'https://i.imgur.com/yp0D04J.jpg',
     ],
-    createdAt: '2023-10-07T20:57:12.531Z',
-    updatedAt: '2023-10-07T20:57:12.531Z',
     userId: 1,
   },
   {
@@ -253,12 +237,11 @@ const projects = [
     total: 1729,
     goal: 1289.0,
     deadline: 150,
+    report: 0,
     image: [
       'https://i.imgur.com/PEIkxNt.jpg',
       'https://i.imgur.com/HZ1A5Ni.jpg',
     ],
-    createdAt: '2023-10-07T21:00:43.713Z',
-    updatedAt: '2023-10-07T21:00:43.713Z',
     userId: 1,
   },
   {
@@ -268,12 +251,11 @@ const projects = [
     total: 1646,
     goal: 2394.0,
     deadline: 230,
+    report: 0,
     image: [
       'https://i.imgur.com/wk1oWjN.jpg',
       'https://i.imgur.com/6zmM0wQ.jpg',
     ],
-    createdAt: '2023-10-07T21:01:58.374Z',
-    updatedAt: '2023-10-07T21:01:58.374Z',
     userId: 1,
   },
   {
@@ -283,12 +265,11 @@ const projects = [
     total: 382,
     goal: 2140.0,
     deadline: 204,
+    report: 0,
     image: [
       'https://i.imgur.com/gZ9woWr.jpg',
       'https://i.imgur.com/r2AAQFN.jpg',
     ],
-    createdAt: '2023-10-07T21:03:09.907Z',
-    updatedAt: '2023-10-07T21:03:09.907Z',
     userId: 1,
   },
   {
@@ -298,12 +279,11 @@ const projects = [
     total: 883,
     goal: 1755.0,
     deadline: 187,
+    report: 0,
     image: [
       'https://i.imgur.com/MpMGF1A.png',
       'https://i.imgur.com/kndd6fu.jpg',
     ],
-    createdAt: '2023-10-07T21:04:32.161Z',
-    updatedAt: '2023-10-07T21:04:32.161Z',
     userId: 1,
   },
   {
@@ -313,12 +293,11 @@ const projects = [
     total: 963,
     goal: 1336.0,
     deadline: 149,
+    report: 0,
     image: [
       'https://i.imgur.com/V5CGTUA.jpg',
       'https://i.imgur.com/Qk5tbGC.jpg',
     ],
-    createdAt: '2023-10-07T21:05:54.097Z',
-    updatedAt: '2023-10-07T21:05:54.097Z',
     userId: 1,
   },
   {
@@ -329,12 +308,11 @@ const projects = [
     total: 932,
     goal: 670.0,
     deadline: 54,
+    report: 0,
     image: [
       'https://i.imgur.com/4TsDKJo.jpg',
       'https://i.imgur.com/55Qx6nY.jpg',
     ],
-    createdAt: '2023-10-07T21:07:55.877Z',
-    updatedAt: '2023-10-07T21:07:55.877Z',
     userId: 1,
   },
   {
@@ -344,13 +322,12 @@ const projects = [
     total: 1174,
     goal: 1734.0,
     deadline: 139,
+    report: 0,
     image: [
       'https://i.imgur.com/W7yVI68.jpg',
       'https://i.imgur.com/QBSOcfR.jpg',
       'https://i.imgur.com/Ehix9un.jpg',
     ],
-    createdAt: '2023-10-07T21:11:39.082Z',
-    updatedAt: '2023-10-07T21:11:39.082Z',
     userId: 1,
   },
   {
@@ -360,12 +337,11 @@ const projects = [
     total: 28503,
     goal: 35200.0,
     deadline: 344,
+    report: 0,
     image: [
       'https://i.imgur.com/LlLITKC.jpg',
       'https://i.imgur.com/dg04KFT.jpg',
     ],
-    createdAt: '2023-10-07T21:14:38.426Z',
-    updatedAt: '2023-10-07T21:14:38.426Z',
     userId: 1,
   },
   {
@@ -375,12 +351,11 @@ const projects = [
     total: 13809,
     goal: 17980.0,
     deadline: 312,
+    report: 0,
     image: [
       'https://i.imgur.com/3TLKswP.jpg',
       'https://i.imgur.com/BNGPjDw.jpg',
     ],
-    createdAt: '2023-10-07T21:15:59.693Z',
-    updatedAt: '2023-10-07T21:15:59.693Z',
     userId: 1,
   },
   {
@@ -390,13 +365,12 @@ const projects = [
     total: 1715,
     goal: 2400.0,
     deadline: 202,
+    report: 0,
     image: [
       'https://i.imgur.com/6949Kaz.jpg',
       'https://i.imgur.com/SME9T4z.jpg',
       'https://i.imgur.com/UBqznti.jpg',
     ],
-    createdAt: '2023-10-07T21:25:42.091Z',
-    updatedAt: '2023-10-07T21:25:42.091Z',
     userId: 1,
   },
   {
@@ -407,12 +381,11 @@ const projects = [
     total: 3277,
     goal: 1890.0,
     deadline: 168,
+    report: 0,
     image: [
       'https://i.imgur.com/RvOJpFK.jpg',
       'https://i.imgur.com/baklHnV.jpg',
     ],
-    createdAt: '2023-10-07T21:28:42.100Z',
-    updatedAt: '2023-10-07T21:28:42.100Z',
     userId: 1,
   },
   {
@@ -422,12 +395,11 @@ const projects = [
     total: 593,
     goal: 1239.0,
     deadline: 97,
+    report: 0,
     image: [
       'https://i.imgur.com/GD0sSM8.jpg',
       'https://i.imgur.com/TTr0bPO.jpg',
     ],
-    createdAt: '2023-10-07T21:29:59.940Z',
-    updatedAt: '2023-10-07T21:29:59.940Z',
     userId: 1,
   },
   {
@@ -437,12 +409,11 @@ const projects = [
     total: 21610,
     goal: 23900.0,
     deadline: 454,
+    report: 0,
     image: [
       'https://i.imgur.com/eOmvpmT.jpg',
       'https://i.imgur.com/ColfyIy.jpg',
     ],
-    createdAt: '2023-10-07T21:31:58.603Z',
-    updatedAt: '2023-10-07T21:31:58.603Z',
     userId: 1,
   },
   {
@@ -452,12 +423,11 @@ const projects = [
     total: 647,
     goal: 3460.0,
     deadline: 211,
+    report: 0,
     image: [
       'https://i.imgur.com/icbUasm.jpg',
       'https://i.imgur.com/vA1anue.jpg',
     ],
-    createdAt: '2023-10-07T21:35:57.217Z',
-    updatedAt: '2023-10-07T21:35:57.217Z',
     userId: 1,
   },
   {
@@ -467,12 +437,11 @@ const projects = [
     total: 4193,
     goal: 2944.0,
     deadline: 197,
+    report: 0,
     image: [
       'https://i.imgur.com/LVy5HKn.jpg',
       'https://i.imgur.com/vy3iqfy.png',
     ],
-    createdAt: '2023-10-07T21:38:04.890Z',
-    updatedAt: '2023-10-07T21:38:04.890Z',
     userId: 1,
   },
   {
@@ -482,12 +451,11 @@ const projects = [
     total: 814,
     goal: 1670.0,
     deadline: 173,
+    report: 0,
     image: [
       'https://i.imgur.com/IzJTZS4.jpg',
       'https://i.imgur.com/dwN7i46.png',
     ],
-    createdAt: '2023-10-07T21:39:40.227Z',
-    updatedAt: '2023-10-07T21:39:40.227Z',
     userId: 1,
   },
   {
@@ -498,12 +466,11 @@ const projects = [
     total: 10287,
     goal: 24780.0,
     deadline: 258,
+    report: 0,
     image: [
       'https://i.imgur.com/RKWUXYs.png',
       'https://i.imgur.com/jmPObuW.jpg',
     ],
-    createdAt: '2023-10-07T21:41:32.871Z',
-    updatedAt: '2023-10-07T21:41:32.871Z',
     userId: 1,
   },
   {
@@ -513,12 +480,11 @@ const projects = [
     total: 38410,
     goal: 31530.0,
     deadline: 214,
+    report: 0,
     image: [
       'https://i.imgur.com/1mlEPxT.jpg',
       'https://i.imgur.com/C3EllB0.jpg',
     ],
-    createdAt: '2023-10-07T21:42:52.694Z',
-    updatedAt: '2023-10-07T21:42:52.694Z',
     userId: 1,
   },
   {
@@ -528,12 +494,11 @@ const projects = [
     total: 27266,
     goal: 55799.0,
     deadline: 239,
+    report: 0,
     image: [
       'https://i.imgur.com/Yb9UkRQ.jpg',
       'https://i.imgur.com/LyfObBa.jpg',
     ],
-    createdAt: '2023-10-07T21:44:49.282Z',
-    updatedAt: '2023-10-07T21:44:49.282Z',
     userId: 1,
   },
   {
@@ -544,12 +509,73 @@ const projects = [
     total: 26790,
     goal: 27077.0,
     deadline: 207,
+    report: 0,
     image: [
       'https://i.imgur.com/z0zaOAS.jpg',
       'https://i.imgur.com/9na4Ute.jpg',
     ],
-    createdAt: '2023-10-07T21:46:21.024Z',
-    updatedAt: '2023-10-07T21:46:21.024Z',
+    userId: 1,
+  },
+  {
+    name: 'Europe Fashion',
+    description: 'Revista com as maiores novidades da moda europeia',
+    category: 'Outros',
+    total: 21600,
+    goal: 15370.0,
+    deadline: 389,
+    report: 0,
+    image: [
+      'https://i.imgur.com/uTLyyxh.jpg',
+      'https://i.imgur.com/NuF935d.png',
+    ],
+    userId: 1,
+  },
+  {
+    name: 'Riquezas Naturais',
+    description:
+      'Fotografias de diferentes lugares do mundo em fácil acesso para você.',
+    category: 'Outros',
+    total: 7350,
+    goal: 12057.0,
+    deadline: 46,
+    report: 0,
+    image: [
+      'https://i.imgur.com/QBSADvY.jpg',
+      'https://i.imgur.com/BJ5phvi.jpg',
+      'https://i.imgur.com/NB6qe4K.jpg',
+    ],
+    userId: 1,
+  },
+  {
+    name: 'Kit de maquiagens Miss Rôse',
+    description:
+      'Um kit com uma das marcas mais famosa do mercado, agora no Brasil.',
+    category: 'Outros',
+    total: 758,
+    goal: 1730.0,
+    deadline: 86,
+    report: 0,
+    image: [
+      'https://i.imgur.com/rvCZWQm.jpg',
+      'https://i.imgur.com/SJnzWKX.png',
+      'https://i.imgur.com/1MzBS07.jpg',
+    ],
+    userId: 1,
+  },
+  {
+    name: 'Curso de educação financeira',
+    description:
+      'Uma coletânea de e-books para aprender a gerenciar seu dinheiro de uma maneira fácil e eficiente',
+    category: 'Outros',
+    total: 168974,
+    goal: 235000.0,
+    deadline: 117,
+    report: 0,
+    image: [
+      'https://i.imgur.com/akR3DOi.jpg',
+      'https://i.imgur.com/CSGi6Xw.png',
+      'https://i.imgur.com/VZPV0hE.jpg',
+    ],
     userId: 1,
   },
 ];
