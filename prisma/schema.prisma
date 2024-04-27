@@ -28,6 +28,7 @@ model User {
   neighborhood     String?    @db.VarChar(255)
   city             String?    @db.VarChar(255)
   state            String?    @db.Char(2)
+  isAdmin          Boolean    @default(false) @db.Boolean
   createdAt        DateTime   @default(now())
   updatedAt        DateTime   @updatedAt
   project          Project[]
@@ -36,22 +37,24 @@ model User {
 }
 
 model Project {
-  id          Int        @id @default(autoincrement())
-  name        String     @db.VarChar(255)
-  description String     @db.VarChar(255)
-  category    String     @db.VarChar(255)
-  total       Decimal    @db.Decimal(10, 2)
-  goal        Decimal    @db.Decimal(10, 2)
-  deadline    Int        @db.Integer
-  report      Int        @db.Integer @default(0)
-  image       String[]
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
-  User        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId      Int
-  comment     Comment[]
-  reward      Reward[]
-  donation    Donation[]
+  id            Int        @id @default(autoincrement())
+  name          String     @db.VarChar(255)
+  description   String     @db.VarChar(255)
+  category      String     @db.VarChar(255)
+  total         Decimal    @db.Decimal(10, 2)
+  goal          Decimal    @db.Decimal(10, 2)
+  deadline      Int        @db.Integer
+  report        Int        @default(0) @db.Integer
+  reportMessages String[]   @default([])
+  visible       Boolean    @default(true) @db.Boolean
+  image         String[]
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  User          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId        Int
+  comment       Comment[]
+  reward        Reward[]
+  donation      Donation[]
 }
 
 model Comment {
