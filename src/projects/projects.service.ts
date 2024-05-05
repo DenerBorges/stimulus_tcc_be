@@ -1,6 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaClient, Project } from '@prisma/client';
 import { CreateProjectDto } from './dto/create-project.dto';
+import { Cron, CronExpression } from '@nestjs/schedule';
 
 @Injectable()
 export class ProjectsService {
@@ -26,7 +27,9 @@ export class ProjectsService {
   }
 
   async findAll(): Promise<Project[]> {
-    const foundAllProject = await this.prisma.project.findMany();
+    const foundAllProject = await this.prisma.project.findMany({
+      where: { visible: true },
+    });
     return foundAllProject;
   }
 
@@ -51,7 +54,6 @@ export class ProjectsService {
 
   async update(
     id: number,
-    report: number,
     data: Partial<Project>,
     images?: Express.Multer.File[],
   ): Promise<Project> {
@@ -74,15 +76,6 @@ export class ProjectsService {
       data.image = [...existingProject.image, ...imageStrings];
     }
 
-    const reportThreshold = 20;
-    if (report >= reportThreshold) {
-      // Se o número de denúncias exceder o limite, exclua o projeto
-      await this.prisma.project.delete({ where: { id } });
-      throw new NotFoundException(
-        'Projeto excluído devido ao número excessivo de denúncias',
-      );
-    }
-
     // Atualiza o projeto com os dados fornecidos
     const updatedProject = await this.prisma.project.update({
       where: { id },
@@ -90,6 +83,27 @@ export class ProjectsService {
     });
 
     return updatedProject;
+  }
+
+  @Cron(CronExpression.EVERY_DAY_AT_MIDNIGHT)
+  async updateProjectDeadlines() {
+    const allProjects = await this.prisma.project.findMany();
+
+    for (const project of allProjects) {
+      if (project.deadline > 0 && project.visible) {
+        await this.prisma.project.update({
+          where: { id: project.id },
+          data: { deadline: project.deadline - 1 },
+        });
+
+        if (project.deadline - 1 === 0) {
+          await this.prisma.project.update({
+            where: { id: project.id },
+            data: { visible: false },
+          });
+        }
+      }
+    }
   }
 
   async remove(id: number): Promise<Project> {

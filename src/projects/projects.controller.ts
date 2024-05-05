@@ -49,9 +49,8 @@ export class ProjectsController {
     @Param('id') id: number,
     @UploadedFiles() images: Express.Multer.File[],
     @Body() project: Project,
-    @Body('report') report: number,
   ): Promise<Project | null> {
-    return this.projectsService.update(+id, report, project, images);
+    return this.projectsService.update(+id, project, images);
   }
 
   @Delete(':id')

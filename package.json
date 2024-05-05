@@ -28,6 +28,7 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/passport": "^10.0.0",
     "@nestjs/platform-express": "^9.4.3",
+    "@nestjs/schedule": "^4.0.2",
     "@prisma/client": "^5.2.0",
     "@types/nodemailer": "^6.4.14",
     "@types/passport-jwt": "^3.0.9",
