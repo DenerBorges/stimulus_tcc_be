@@ -10,7 +10,6 @@ const projects = [
     total: 540,
     goal: 1300.0,
     deadline: 90,
-    report: 0,
     image: [
       'https://i.imgur.com/HRzcZmh.png',
       'https://i.imgur.com/LXpaw8c.jpg',
@@ -26,7 +25,6 @@ const projects = [
     total: 1250,
     goal: 3600.0,
     deadline: 130,
-    report: 0,
     image: [
       'https://i.imgur.com/KxiClv0.jpg',
       'https://i.imgur.com/DAPfANO.jpg',
@@ -40,7 +38,6 @@ const projects = [
     total: 210,
     goal: 1170.0,
     deadline: 83,
-    report: 0,
     image: [
       'https://i.imgur.com/i10fFCF.jpg',
       'https://i.imgur.com/1ye5EkG.jpg',
@@ -54,7 +51,6 @@ const projects = [
     total: 186,
     goal: 695.0,
     deadline: 67,
-    report: 0,
     image: [
       'https://i.imgur.com/abkfTHa.png',
       'https://i.imgur.com/7YJZrN6.jpg',
@@ -68,7 +64,6 @@ const projects = [
     total: 983,
     goal: 2450.0,
     deadline: 114,
-    report: 0,
     image: [
       'https://i.imgur.com/bI7pGh1.jpg',
       'https://i.imgur.com/seP6bCT.jpg',
@@ -82,7 +77,6 @@ const projects = [
     total: 2092,
     goal: 3920.0,
     deadline: 180,
-    report: 0,
     image: [
       'https://i.imgur.com/cn3OSEi.jpg',
       'https://i.imgur.com/IViW68z.jpg',
@@ -97,7 +91,6 @@ const projects = [
     total: 34,
     goal: 560.0,
     deadline: 143,
-    report: 0,
     image: [
       'https://i.imgur.com/ilqnAsZ.jpg',
       'https://i.imgur.com/Rmsn6P5.jpg',
@@ -111,7 +104,6 @@ const projects = [
     total: 2174,
     goal: 2300.0,
     deadline: 78,
-    report: 0,
     image: [
       'https://i.imgur.com/gHQYuLs.jpg',
       'https://i.imgur.com/fK0itrT.jpg',
@@ -125,7 +117,6 @@ const projects = [
     total: 1340,
     goal: 980.0,
     deadline: 112,
-    report: 0,
     image: [
       'https://i.imgur.com/ZTI8Zm5.jpg',
       'https://i.imgur.com/hejhMdV.png',
@@ -139,7 +130,6 @@ const projects = [
     total: 980,
     goal: 1140.0,
     deadline: 99,
-    report: 0,
     image: [
       'https://i.imgur.com/CiiaYqN.jpg',
       'https://i.imgur.com/KWLHFf8.jpg',
@@ -153,7 +143,6 @@ const projects = [
     total: 1290,
     goal: 674.0,
     deadline: 75,
-    report: 0,
     image: [
       'https://i.imgur.com/Sbvw4pZ.jpg',
       'https://i.imgur.com/76N0ITf.png',
@@ -167,7 +156,6 @@ const projects = [
     total: 1020,
     goal: 865.0,
     deadline: 135,
-    report: 0,
     image: [
       'https://i.imgur.com/z4sW4Op.png',
       'https://i.imgur.com/dGS1RIH.jpg',
@@ -181,7 +169,6 @@ const projects = [
     total: 1730,
     goal: 2542.0,
     deadline: 87,
-    report: 0,
     image: [
       'https://i.imgur.com/suxToHr.jpg',
       'https://i.imgur.com/x5wsAwF.jpg',
@@ -195,7 +182,6 @@ const projects = [
     total: 10420,
     goal: 8365.0,
     deadline: 78,
-    report: 0,
     image: [
       'https://i.imgur.com/61Vyb1u.jpg',
       'https://i.imgur.com/YxydHz9.jpg',
@@ -209,7 +195,6 @@ const projects = [
     total: 5710,
     goal: 5670.0,
     deadline: 210,
-    report: 0,
     image: [
       'https://i.imgur.com/UBZTYdE.jpg',
       'https://i.imgur.com/9cbV565.jpg',
@@ -223,7 +208,6 @@ const projects = [
     total: 2351,
     goal: 4835.0,
     deadline: 181,
-    report: 0,
     image: [
       'https://i.imgur.com/ZcU8Klu.jpg',
       'https://i.imgur.com/yp0D04J.jpg',
@@ -237,7 +221,6 @@ const projects = [
     total: 1729,
     goal: 1289.0,
     deadline: 150,
-    report: 0,
     image: [
       'https://i.imgur.com/PEIkxNt.jpg',
       'https://i.imgur.com/HZ1A5Ni.jpg',
@@ -251,7 +234,6 @@ const projects = [
     total: 1646,
     goal: 2394.0,
     deadline: 230,
-    report: 0,
     image: [
       'https://i.imgur.com/wk1oWjN.jpg',
       'https://i.imgur.com/6zmM0wQ.jpg',
@@ -265,7 +247,6 @@ const projects = [
     total: 382,
     goal: 2140.0,
     deadline: 204,
-    report: 0,
     image: [
       'https://i.imgur.com/gZ9woWr.jpg',
       'https://i.imgur.com/r2AAQFN.jpg',
@@ -279,7 +260,6 @@ const projects = [
     total: 883,
     goal: 1755.0,
     deadline: 187,
-    report: 0,
     image: [
       'https://i.imgur.com/MpMGF1A.png',
       'https://i.imgur.com/kndd6fu.jpg',
@@ -293,7 +273,6 @@ const projects = [
     total: 963,
     goal: 1336.0,
     deadline: 149,
-    report: 0,
     image: [
       'https://i.imgur.com/V5CGTUA.jpg',
       'https://i.imgur.com/Qk5tbGC.jpg',
@@ -308,7 +287,6 @@ const projects = [
     total: 932,
     goal: 670.0,
     deadline: 54,
-    report: 0,
     image: [
       'https://i.imgur.com/4TsDKJo.jpg',
       'https://i.imgur.com/55Qx6nY.jpg',
@@ -322,7 +300,6 @@ const projects = [
     total: 1174,
     goal: 1734.0,
     deadline: 139,
-    report: 0,
     image: [
       'https://i.imgur.com/W7yVI68.jpg',
       'https://i.imgur.com/QBSOcfR.jpg',
@@ -337,7 +314,6 @@ const projects = [
     total: 28503,
     goal: 35200.0,
     deadline: 344,
-    report: 0,
     image: [
       'https://i.imgur.com/LlLITKC.jpg',
       'https://i.imgur.com/dg04KFT.jpg',
@@ -351,7 +327,6 @@ const projects = [
     total: 13809,
     goal: 17980.0,
     deadline: 312,
-    report: 0,
     image: [
       'https://i.imgur.com/3TLKswP.jpg',
       'https://i.imgur.com/BNGPjDw.jpg',
@@ -365,7 +340,6 @@ const projects = [
     total: 1715,
     goal: 2400.0,
     deadline: 202,
-    report: 0,
     image: [
       'https://i.imgur.com/6949Kaz.jpg',
       'https://i.imgur.com/SME9T4z.jpg',
@@ -381,7 +355,6 @@ const projects = [
     total: 3277,
     goal: 1890.0,
     deadline: 168,
-    report: 0,
     image: [
       'https://i.imgur.com/RvOJpFK.jpg',
       'https://i.imgur.com/baklHnV.jpg',
@@ -395,7 +368,6 @@ const projects = [
     total: 593,
     goal: 1239.0,
     deadline: 97,
-    report: 0,
     image: [
       'https://i.imgur.com/GD0sSM8.jpg',
       'https://i.imgur.com/TTr0bPO.jpg',
@@ -409,7 +381,6 @@ const projects = [
     total: 21610,
     goal: 23900.0,
     deadline: 454,
-    report: 0,
     image: [
       'https://i.imgur.com/eOmvpmT.jpg',
       'https://i.imgur.com/ColfyIy.jpg',
@@ -423,7 +394,6 @@ const projects = [
     total: 647,
     goal: 3460.0,
     deadline: 211,
-    report: 0,
     image: [
       'https://i.imgur.com/icbUasm.jpg',
       'https://i.imgur.com/vA1anue.jpg',
@@ -437,7 +407,6 @@ const projects = [
     total: 4193,
     goal: 2944.0,
     deadline: 197,
-    report: 0,
     image: [
       'https://i.imgur.com/LVy5HKn.jpg',
       'https://i.imgur.com/vy3iqfy.png',
@@ -451,7 +420,6 @@ const projects = [
     total: 814,
     goal: 1670.0,
     deadline: 173,
-    report: 0,
     image: [
       'https://i.imgur.com/IzJTZS4.jpg',
       'https://i.imgur.com/dwN7i46.png',
@@ -466,7 +434,6 @@ const projects = [
     total: 10287,
     goal: 24780.0,
     deadline: 258,
-    report: 0,
     image: [
       'https://i.imgur.com/RKWUXYs.png',
       'https://i.imgur.com/jmPObuW.jpg',
@@ -480,7 +447,6 @@ const projects = [
     total: 38410,
     goal: 31530.0,
     deadline: 214,
-    report: 0,
     image: [
       'https://i.imgur.com/1mlEPxT.jpg',
       'https://i.imgur.com/C3EllB0.jpg',
@@ -494,7 +460,6 @@ const projects = [
     total: 27266,
     goal: 55799.0,
     deadline: 239,
-    report: 0,
     image: [
       'https://i.imgur.com/Yb9UkRQ.jpg',
       'https://i.imgur.com/LyfObBa.jpg',
@@ -509,7 +474,6 @@ const projects = [
     total: 26790,
     goal: 27077.0,
     deadline: 207,
-    report: 0,
     image: [
       'https://i.imgur.com/z0zaOAS.jpg',
       'https://i.imgur.com/9na4Ute.jpg',
@@ -521,9 +485,8 @@ const projects = [
     description: 'Revista com as maiores novidades da moda europeia',
     category: 'Outros',
     total: 21600,
-    goal: 15370.0,
+    goal: 15370,
     deadline: 389,
-    report: 0,
     image: [
       'https://i.imgur.com/uTLyyxh.jpg',
       'https://i.imgur.com/NuF935d.png',
@@ -536,15 +499,14 @@ const projects = [
       'Fotografias de diferentes lugares do mundo em fácil acesso para você.',
     category: 'Outros',
     total: 7350,
-    goal: 12057.0,
+    goal: 12057,
     deadline: 46,
-    report: 0,
     image: [
       'https://i.imgur.com/QBSADvY.jpg',
       'https://i.imgur.com/BJ5phvi.jpg',
       'https://i.imgur.com/NB6qe4K.jpg',
     ],
-    userId: 1,
+    userId: 2,
   },
   {
     name: 'Kit de maquiagens Miss Rôse',
@@ -552,15 +514,14 @@ const projects = [
       'Um kit com uma das marcas mais famosa do mercado, agora no Brasil.',
     category: 'Outros',
     total: 758,
-    goal: 1730.0,
+    goal: 1730,
     deadline: 86,
-    report: 0,
     image: [
       'https://i.imgur.com/rvCZWQm.jpg',
       'https://i.imgur.com/SJnzWKX.png',
       'https://i.imgur.com/1MzBS07.jpg',
     ],
-    userId: 1,
+    userId: 11,
   },
   {
     name: 'Curso de educação financeira',
@@ -568,15 +529,96 @@ const projects = [
       'Uma coletânea de e-books para aprender a gerenciar seu dinheiro de uma maneira fácil e eficiente',
     category: 'Outros',
     total: 168974,
-    goal: 235000.0,
+    goal: 235000,
     deadline: 117,
-    report: 0,
     image: [
       'https://i.imgur.com/akR3DOi.jpg',
       'https://i.imgur.com/CSGi6Xw.png',
       'https://i.imgur.com/VZPV0hE.jpg',
     ],
-    userId: 1,
+    userId: 3,
+  },
+  {
+    name: 'Roupas de fantasia',
+    description:
+      'Estamos abrindo uma loja de fantasias e gostariamos de sua ajuda para podermos dar os primeiros passos',
+    category: 'Outros',
+    total: 3672,
+    goal: 11450,
+    deadline: 240,
+    image: [
+      'https://i.imgur.com/47MJLyq.jpg',
+      'https://i.imgur.com/ZsMCzK9.jpg',
+    ],
+    userId: 4,
+  },
+  {
+    name: 'Preciso de uma cadeira de rodas',
+    description:
+      'Me ajude a comprar uma cadeira de rodas para meu avô que necessita, pois não tinha nenhuma cadeira disponível de forma gratuita',
+    category: 'Social',
+    total: 5673,
+    goal: 14500,
+    deadline: 450,
+    image: [
+      'https://i.imgur.com/pFYYH7n.jpg',
+      'https://i.imgur.com/i1PgVYr.jpg',
+    ],
+    userId: 2,
+  },
+  {
+    name: 'Ajuda com tratamento',
+    description:
+      'Fui atingido por uma queimadura em casa enquanto cozinhava e preciso do dinheiro para um tratamento no único hospital que tenho disponível',
+    category: 'Social',
+    total: 1235,
+    goal: 4780,
+    deadline: 230,
+    image: ['https://i.imgur.com/6bsKqoh.jpg'],
+    userId: 3,
+  },
+  {
+    name: 'Tratamento autismo',
+    description:
+      'Criei essa vaquinha para conseguir um laudo médico para meu filho que é autista, preciso desse laudo para conseguir os tratamentos e acompanhamento necessário',
+    category: 'Social',
+    total: 1756,
+    goal: 1250,
+    deadline: 315,
+    image: [
+      'https://i.imgur.com/4jmJQoF.jpg',
+      'https://i.imgur.com/oD8ohjL.jpg',
+    ],
+    userId: 11,
+  },
+  {
+    name: 'Câncer de mama',
+    description:
+      'Necessito desta quantia para realizar meu tratamento de câncer de mama que no momento não tenho condições de pagar',
+    category: 'Social',
+    total: 8741,
+    goal: 13500,
+    deadline: 289,
+    image: [
+      'https://i.imgur.com/zgonzOl.jpg',
+      'https://i.imgur.com/mTSmHIA.jpg',
+    ],
+    userId: 13,
+  },
+  {
+    name: 'SOS Enchentes',
+    description:
+      'Somos um grupo de pessoas voluntárias que realizam trabalhos em cidades do Rio Grande do Sul para resgate e doações para as pessoas mais necessitadas em todo o estado',
+    category: 'Social',
+    total: 10345,
+    goal: 26700,
+    deadline: 438,
+    image: [
+      'https://i.imgur.com/aaA3fe4.jpg',
+      'https://i.imgur.com/oqNGEjv.jpg',
+      'https://i.imgur.com/FUqB2ZK.jpg',
+    ],
+    userId: 4,
   },
 ];
 

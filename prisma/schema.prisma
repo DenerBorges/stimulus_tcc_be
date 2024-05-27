@@ -37,24 +37,24 @@ model User {
 }
 
 model Project {
-  id            Int        @id @default(autoincrement())
-  name          String     @db.VarChar(255)
-  description   String     @db.VarChar(255)
-  category      String     @db.VarChar(255)
-  total         Decimal    @db.Decimal(10, 2)
-  goal          Decimal    @db.Decimal(10, 2)
-  deadline      Int        @db.Integer
-  report        Int        @default(0) @db.Integer
+  id             Int        @id @default(autoincrement())
+  name           String     @db.VarChar(255)
+  description    String     @db.VarChar(255)
+  category       String     @db.VarChar(255)
+  total          Decimal    @db.Decimal(10, 2)
+  goal           Decimal    @db.Decimal(10, 2)
+  deadline       Int        @db.Integer
+  report         Int        @default(0) @db.Integer
   reportMessages String[]   @default([])
-  visible       Boolean    @default(true) @db.Boolean
-  image         String[]
-  createdAt     DateTime   @default(now())
-  updatedAt     DateTime   @updatedAt
-  User          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId        Int
-  comment       Comment[]
-  reward        Reward[]
-  donation      Donation[]
+  visible        Boolean    @default(true) @db.Boolean
+  image          String[]
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  User           User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId         Int
+  comment        Comment[]
+  reward         Reward[]
+  donation       Donation[]
 }
 
 model Comment {
@@ -87,10 +87,10 @@ model Donation {
   value     Decimal  @db.Decimal(10, 2)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  project   Project  @relation(fields: [projectId], references: [id])
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
   projectId Int
-  user      User     @relation(fields: [userId], references: [id])
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    Int
-  reward    Reward   @relation(fields: [rewardId], references: [id])
+  reward    Reward   @relation(fields: [rewardId], references: [id], onDelete: Cascade)
   rewardId  Int
 }
