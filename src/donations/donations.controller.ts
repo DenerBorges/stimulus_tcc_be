@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { DonationsService } from './donations.service';
 import { Donation } from '@prisma/client';
+import { IsPublic } from 'src/auth/decorators/is-public.decorator';
 
 @Controller('donations')
 export class DonationsController {
@@ -11,6 +12,7 @@ export class DonationsController {
     return this.donationsService.create(donation);
   }
 
+  @IsPublic()
   @Get()
   findAll(): Promise<Donation[]> {
     return this.donationsService.findAll();
