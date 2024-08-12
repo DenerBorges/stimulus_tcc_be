@@ -29,6 +29,7 @@ model User {
   city             String?    @db.VarChar(255)
   state            String?    @db.Char(2)
   isAdmin          Boolean    @default(false) @db.Boolean
+  isSuperAdmin     Boolean    @default(false) @db.Boolean
   createdAt        DateTime   @default(now())
   updatedAt        DateTime   @updatedAt
   project          Project[]
