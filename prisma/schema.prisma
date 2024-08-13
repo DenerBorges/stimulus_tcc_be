@@ -28,6 +28,7 @@ model User {
   neighborhood     String?    @db.VarChar(255)
   city             String?    @db.VarChar(255)
   state            String?    @db.Char(2)
+  visible          Boolean    @default(true) @db.Boolean
   isAdmin          Boolean    @default(false) @db.Boolean
   isSuperAdmin     Boolean    @default(false) @db.Boolean
   createdAt        DateTime   @default(now())
